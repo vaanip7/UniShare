@@ -334,7 +334,7 @@
 
 <div class="page">
 
-  <!-- LEFT PANEL -->
+  ``
   <div class="left-panel">
     <div class="brand">
       <div class="brand-mark">
@@ -359,7 +359,7 @@
     </div>
   </div>
 
-  <!-- RIGHT PANEL -->
+  
   <div class="right-panel">
     <div class="form-container">
 
@@ -466,8 +466,7 @@
 
     if (!valid) return;
 
-    // ---- For now: just redirect to the right dashboard ----
-    // Later, replace this with a real fetch() call to your Spring Boot API
+
     if (currentRole === 'student') {
       localStorage.setItem('studentName', email.split('@')[0]);
 window.location.href = 'student-dashboard.html';
@@ -476,7 +475,7 @@ window.location.href = 'student-dashboard.html';
     }
   }
 
-  // Press Enter to submit
+  
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') handleLogin();
   });
