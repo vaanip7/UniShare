@@ -219,12 +219,8 @@
     document.getElementById('badge-text').textContent = isStudent ? 'Signing in as Student' : 'Signing in as Faculty';
     document.getElementById('btn-label').textContent  = isStudent ? 'Sign in as Student' : 'Sign in as Faculty';
     document.getElementById('form-title').textContent = isStudent ? 'Welcome back' : 'Faculty portal';
-    document.getElementById('form-sub').textContent   = isStudent
-      ? 'Sign in to your UniShare account'
-      : 'Access your courses and submissions';
-    document.getElementById('email').placeholder = isStudent
-      ? 'you@university.edu'
-      : 'faculty@university.edu';
+    document.getElementById('form-sub').textContent   = isStudent? 'Sign in to your UniShare account' : 'Access your courses and submissions';
+    document.getElementById('email').placeholder = isStudent ? 'you@university.edu': 'faculty@university.edu';
   }
 
   function handleLogin(e) {
@@ -263,7 +259,8 @@
     if (currentRole === 'student') {
       localStorage.setItem('studentName', email.split('@')[0]);
       window.location.href = 'index.html';
-    } else {
+    }
+     else {
       window.location.href = 'faculty-dashboard.html';
     }
   }
