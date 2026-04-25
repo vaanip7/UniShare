@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>UniShare — Login</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+//  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -258,7 +258,7 @@
     // Demo redirect logic
     if (currentRole === 'student') {
       localStorage.setItem('studentName', email.split('@')[0]);
-      window.location.href = 'student-dashboard.html';
+      window.location.href = 'index.html';
     }
      else {
       window.location.href = 'faculty-dashboard.html';
